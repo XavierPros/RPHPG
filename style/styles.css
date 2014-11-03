@@ -1,0 +1,51 @@
+* {
+	font-family: "roboto";
+	font-weight: 300;
+}
+
+.clear{
+	clear : both;
+}
+
+#container_perso #info_perso {
+	color: #ecf0f1;
+	background-color: #3498db;
+	height: 300px;
+	width: 255px;
+	margin: 5px;
+	float: left;
+	padding-left: 20px;
+	padding-top: 1px;
+}
+
+#container_perso #info_inventaire {
+	color: #ecf0f1;
+	background-color: #3498db;
+	height: 300px;
+	width: 255px;
+	margin: 5px;
+	float: left;
+	padding-left: 20px;
+	padding-top: 1px;
+}
+
+
+#container_ennemi #info_loup {
+	color: #ecf0f1;
+	background-color: #e74c3c;
+	height: 300px;
+	width: 255px;
+	float: left;
+	margin: 5px;
+	padding-left: 20px;
+}
+
+#container_ennemi #info_ours {
+	color: #ecf0f1;
+	background-color: #e74c3c;
+	height: 300px;
+	width: 255px;
+	float: left;
+	margin: 5px;
+	padding-left: 20px;
+}
