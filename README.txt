@@ -18,3 +18,13 @@ git commit -m "Commentaire sur les modifications" permet de committer (taper -am
 si tu as l'erreur "no changes added to commit")
 git diff permet de checker les modifications faites avant de commit
 git log permet de regarder l'historique des commit
+
+Il est recommandé de travailler sur une branche lorqu'on veut ajouter ou modifier du code
+git branch "nom de la branche" permet de créer une branche 
+git branch permet d'afficher les branches (la branche courante est indiqué avec une *)
+git checkout "nom de la branche" permet de se mettre sur la branche voulue
+Une fois que le code est fonctionnel, on repasse sur la branche principale (appelé master)
+et on fusionne les branches avec :
+git merge "nom de la branche"
+
+Pour finir, on push le code sur gitHub avec git push-u origin master
