@@ -16,3 +16,5 @@ git status permet de vérifier l'état des fichiers dans le répertoire git
 git add "Nom du fichier" permet de suivre un fichier pour le committer par le suite
 git commit -m "Commentaire sur les modifications" permet de committer (taper -am au lieu de -m
 si tu as l'erreur "no changes added to commit")
+git diff permet de checker les modifications faites avant de commit
+git log permet de regarder l'historique des commit
