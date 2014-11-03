@@ -1,0 +1,2 @@
+Boule de feu : fait de gros dégâts mais prend 2 tours avant de pouvoir rejouer --> doit être 
+utilisé en finish .
