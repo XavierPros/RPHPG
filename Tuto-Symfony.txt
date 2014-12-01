@@ -1,0 +1,18 @@
+Créer un bundle:
+	Ouvrir une une fenêtre de commande dans le dossier Symfony (Shift+clic droit)
+	exécuter commande: php app/console generate:bundle
+	namespace: ProjectName/BundleName_Bundle
+	nom du bundle: ProjectNameBundleName_Bundle (namespace sans les slashs)
+	Target directory: laisser comme ça, appuyer juste sur Entrée
+	Config format: choisir ici PHP
+	Type de structure à générer: laisser no, appuyer juste sur Entrée
+	Confirmer tout le reste en appuyant sur Entrée
+
+Créer la route:
+	Aller dans: src/ProjectName/BundleName_Bundle/Resources/config/routing.*
+	
+Créer le contrôleur:
+	Aller dans: src/ProjectName/BundleName_Bundle/Controller/AdvertController.php
+
+Créer le template:
+	Aller dans: src/ProjectName/BundleName_Bundle/Resources/views/Advert/index.html.twig
