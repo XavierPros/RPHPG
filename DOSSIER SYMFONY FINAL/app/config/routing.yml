@@ -1,4 +1,0 @@
-rphpg_user.:
-    resource: "@RPHPGUser_Bundle/Resources/config/routing.php"
-    prefix:   /
-
