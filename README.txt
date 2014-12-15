@@ -16,5 +16,6 @@ Une fois votre travail terminé:
 -dans votre dossier local, clic-droit->Git add all files now		(pour ajouter au dossier vos modifs)
 -dans le git bash->git status 						(tout doit bien être vert)
 -dans le git bash->git commit -m "commentaire sur votre travail"	(ajout d'un commentaire sur vos modifs)
+-dans le git bash->git checkout master					(pour repartir sur la branch principale)
 -dans le git bash->git git merge "votre nom de branch"			(fusion des autres branch avec la vôtre)
 -dans le git bash->git push -u origin master				(upload de vos modifs dans le dossier général)
