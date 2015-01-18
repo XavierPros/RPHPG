@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Sam 17 Janvier 2015 à 15:38
+-- Généré le :  Dim 18 Janvier 2015 à 17:20
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -143,14 +143,33 @@ CREATE TABLE IF NOT EXISTS `ennemy` (
   `created_at` int(11) NOT NULL,
   `e_lifemax` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
 
 --
 -- Contenu de la table `ennemy`
 --
 
 INSERT INTO `ennemy` (`id`, `e_name`, `e_life`, `e_mana`, `e_hit`, `e_defense`, `e_speed`, `e_loot_id`, `updated_at`, `created_at`, `e_lifemax`) VALUES
-(1, 'Ours', 80, 10, 35, 30, 15, 0, 2015, 0, 80);
+(1, 'Ours', 80, 10, 35, 30, 15, 0, 2015, 0, 80),
+(2, 'Loup', 80, 0, 15, 20, 30, 2, 0, 0, 80),
+(3, 'Troll', 150, 0, 40, 40, 20, 4, 0, 0, 150),
+(4, 'Orc', 50, 20, 20, 15, 30, 3, 0, 0, 50),
+(5, 'LaBelleMere', 5, 0, 75, 0, 3, 5, 0, 0, 5),
+(6, 'Reine Araignée', 100, 30, 35, 30, 60, 6, 0, 0, 100),
+(7, 'Dragon', 200, 160, 80, 70, 50, 7, 0, 0, 200),
+(8, 'Faucheuse', 130, 60, 60, 40, 35, 8, 0, 0, 130),
+(9, 'Gargouille', 110, 50, 65, 70, 50, 9, 0, 0, 110),
+(10, 'Centaure', 140, 20, 0, 0, 0, 0, 0, 0, 0),
+(11, 'Harpie', 80, 30, 50, 40, 65, 11, 0, 0, 80),
+(12, 'Loup-Garou', 190, 0, 90, 110, 80, 12, 0, 0, 190),
+(13, 'Minotaure', 195, 40, 100, 120, 60, 13, 0, 0, 195),
+(14, 'Meduse', 120, 80, 50, 50, 55, 14, 0, 0, 120),
+(15, 'Cerbère', 170, 50, 80, 60, 80, 15, 0, 0, 170),
+(16, 'Hydre', 230, 50, 110, 80, 100, 16, 0, 0, 230),
+(17, 'Manticore', 250, 30, 110, 100, 90, 17, 0, 0, 250),
+(18, 'Cyclope', 280, 0, 140, 110, 60, 18, 0, 0, 280),
+(19, 'Sirène', 90, 70, 70, 40, 100, 19, 0, 0, 90),
+(20, 'Géant', 290, 50, 160, 130, 50, 20, 0, 0, 290);
 
 -- --------------------------------------------------------
 
@@ -195,14 +214,34 @@ CREATE TABLE IF NOT EXISTS `item` (
   `updated_at` int(11) NOT NULL,
   `created_at` int(11) NOT NULL,
   PRIMARY KEY (`id_item`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=22 ;
 
 --
 -- Contenu de la table `item`
 --
 
 INSERT INTO `item` (`id_item`, `item_name`, `item_type`, `effect`, `quantite`, `updated_at`, `created_at`) VALUES
-(2, 'potion', 'soin', 'Redonne 50 points de vie', 3, 0, 0);
+(1, 'Pomme', 'Soin', 'Redonne 25 HP', 1, 0, 0),
+(2, 'potion', 'soin', 'Redonne 50 points de vie', 3, 0, 0),
+(3, 'Ether', 'Soin', 'Redonne 30 point de mana', 1, 0, 0),
+(4, 'Epée courte', 'Arme', 'Epée +2 en force', 1, 0, 0),
+(5, 'Testament', 'Aléatoire', 'Donne objet aléatoire ou met les HP du personnage à 1', 1, 0, 0),
+(6, 'Super Potion', 'Soin', 'Redonne 100hp', 1, 0, 0),
+(7, 'Armure de lave', 'Armure', 'Donne +10 en défense', 1, 0, 0),
+(8, 'Queue de phénix', 'Soin', 'À une chance de ressusciter le personnage en cas de décès ', 1, 0, 0),
+(9, 'Bouclier de Pierre', 'Armure', '+6 point de défense et réduit les dégâts élémentaires ', 1, 0, 0),
+(10, 'Lance de l''olympe', 'Arme', '+7 force et dégâts accrus sur les adversaires volants', 1, 0, 0),
+(11, 'Ether+', 'Soin', 'Redonne 60 points de mana', 1, 0, 0),
+(12, 'Gants du lycanthrope', 'Armure', '+5 points de défense et défense aux dégâts élémentaires accrue', 1, 0, 0),
+(13, 'Hyper Potion', 'Soin', 'Redonne 120 HP', 1, 0, 0),
+(14, 'Elixir', 'Soin', 'Soigne les altérations d''état et redonne 50hp et 30 point de mana', 1, 0, 0),
+(15, 'Bottes du gardien', 'Armure', '+8 en défense et octroie 10% d''être immunisé à la prochaine attaque de feu.', 1, 0, 0),
+(16, 'Ashdautas', 'Arme, Epée à deux mains', '+13 en force', 1, 0, 0),
+(17, 'Jambières de Némée', 'Armure', '+9 en défense', 1, 0, 0),
+(18, 'Masse de Crom', 'Arme', '+15 en force, à une chance d''étourdir un ennemi', 1, 0, 0),
+(19, 'Hyper Ether', 'Soin', 'Redonne 100 points de mana', 1, 0, 0),
+(20, 'Casque de Xul', 'Armure', '+6 en défense, empêche tout effet d''étourdissement', 1, 0, 0),
+(21, 'Antidote', 'Soin', 'Guéri l''altération d''état poison', 1, 0, 0);
 
 -- --------------------------------------------------------
 
